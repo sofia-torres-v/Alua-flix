@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "title": "CUANDO LET, VAR, Y CONST",
+            "image": "/src/assets/Video1.png"
+        },
+        {
+            "id": "2",
+            "title": "¿QUÉ ES JAVASCRIPT?",
+            "image": "/src/assets/video2.png"
+        },
+        {
+            "id": "3",
+            "title": "Equipo Front End",
+            "image": "/src/assets/video3.png"
+        },
+        {
+            "id": "4",
+            "title": "SPRING FRAMEWORK",
+            "image": "/src/assets/video4.png"
+        },
+        {
+            "id": "5",
+            "title": "QUÉ ES SQL",
+            "image": "/src/assets/video6.png"
+        },
+        {
+            "id": "6",
+            "title": "Game Boy",
+            "image": "/src/assets/video7.png"
+        }
+    ]
+}

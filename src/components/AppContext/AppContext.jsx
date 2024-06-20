@@ -1,35 +1,36 @@
 import PropTypes from 'prop-types';
-import { createContext, useEffect, useState } from "react"
+import { createContext, useEffect, useState } from 'react';
 
-const AppContext = createContext();
+const DataContext = createContext();
 
-const AppProvider = ({children}) => {
+const AppProvider = ({ children }) => {
     const [data, setData] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         async function getApi() {
             try {
-                const response = await fetch('http://localhost:4000/products')
+                const response = await fetch('http://localhost:4000/categories');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
                 const dataApi = await response.json();
                 setData(dataApi);
             } catch (error) {
-                console.log(error)
+                console.log('Error fetching categories:', error);
             }
         }
         getApi();
-    },[])
-    
-  return (
-    <AppContext.Provider value ={{data}}>
-        {children}
-    </AppContext.Provider>
-    
-  )
-}
+    }, []);
 
-export { AppProvider, AppContext };
+    return (
+        <DataContext.Provider value={{ data }}>
+            {children}
+        </DataContext.Provider>
+    );
+};
 
-AppProvider.propTypes ={
+AppProvider.propTypes = {
     children: PropTypes.node.isRequired,
-}
+};
 
+export { AppProvider, DataContext };

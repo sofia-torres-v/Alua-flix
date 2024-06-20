@@ -1,34 +1,88 @@
 {
-    "products": [
+    "categories": [
         {
             "id": "1",
-            "title": "CUANDO LET, VAR, Y CONST",
-            "image": "/src/assets/Video1.png"
+            "title": "Frontend ",
+            "videos": [
+                {
+                    "id": "1",
+                    "title": "CUANDO USAR LET, VAR, Y CONST",
+                    "image": "/src/assets/Video1.png",
+                    "video": "https://www.w3schools.com/html/movie.mp4",
+                    "description": "Descripción del video 1."
+                },
+
+                {
+                    "id": "2",
+                    "title": "¿QUÉ ES JAVASCRIPT?",
+                    "image": "/src/assets/video2.png",
+                    "video": "https://www.w3schools.com/html/movie.mp4",
+                    "description": "Descripción del video 2."
+                },
+                {
+                    "id": "3",
+                    "title": "Equipo Front End",
+                    "image": "/src/assets/video3.png",
+                    "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+                    "description": "Descripción del video 3."
+                }
+            ]
         },
         {
             "id": "2",
-            "title": "¿QUÉ ES JAVASCRIPT?",
-            "image": "/src/assets/video2.png"
+            "title": "Backend",
+            "videos": [
+                {
+                    "id": "4",
+                    "title": "SPRING FRAMEWORK",
+                    "image": "/src/assets/Video1.png",
+                    "video": "https://www.w3schools.com/html/movie.mp4",
+                    "description": "Descripción del video 1."
+                },
+
+                {
+                    "id": "5",
+                    "title": "QUÉ ES SQL Y NO SQL",
+                    "image": "/src/assets/video2.png",
+                    "video": "https://www.w3schools.com/html/movie.mp4",
+                    "description": "Descripción del video 2."
+                },
+                {
+                    "id": "6",
+                    "title": "CONOCE LOS ENUMS",
+                    "image": "/src/assets/Video1.png",
+                    "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+                    "description": "Descripción del video 3."
+                }
+            ]
         },
+
         {
             "id": "3",
-            "title": "Equipo Front End",
-            "image": "/src/assets/video3.png"
-        },
-        {
-            "id": "4",
-            "title": "SPRING FRAMEWORK",
-            "image": "/src/assets/video4.png"
-        },
-        {
-            "id": "5",
-            "title": "QUÉ ES SQL",
-            "image": "/src/assets/video6.png"
-        },
-        {
-            "id": "6",
-            "title": "Game Boy",
-            "image": "/src/assets/video7.png"
+            "title": "Innovación y Gestión",
+            "videos": [
+                {
+                    "id": "7",
+                    "title": "LAS 7 SOFSKILLS MáS DESEADAS",
+                    "image": "/src/assets/Video1.png",
+                    "video": "https://www.w3schools.com/html/movie.mp4",
+                    "description": "Descripción del video 6."
+                },
+                {
+                    "id": "8",
+                    "title": "Metodoligías ágiles",
+                    "image": "/src/assets/video6.png",
+                    "video": "https://www.w3schools.com/html/movie.mp4",
+                    "description": "Descripción del video 6."
+                },
+                {
+                    "id": "9",
+                    "title": "Metodoligías ágiles",
+                    "image": "/src/assets/video6.png",
+                    "video": "https://www.w3schools.com/html/movie.mp4",
+                    "description": "Descripción del video 6."
+                }
+            ]
         }
     ]
 }
